@@ -1,0 +1,56 @@
+<template>
+  <div class="home">
+    <div id="app">
+      <ReloadJoke v-on:reload-Jokes="reloadJokes"/>
+      <JokeList :jokeList="jokesAPIFromApp"/>
+    </div>
+  </div>
+</template>
+
+<script>
+import JokeList from '../components/JokeList';
+import ReloadJoke from '../components/ReloadJoke';
+import axios from 'axios';
+
+export default {
+  name: 'Home',
+  components: {
+    JokeList,
+    ReloadJoke,
+  },
+  data() {
+      return {
+          jokes: [ 
+            {
+              id: Number,
+              joke: String,
+              categorie: String,
+              saved: Boolean
+            }
+          ],
+          amount: Number
+      }
+  },
+  methods: {
+      reloadJokes(amount) {
+        this.amount = amount;
+        axios.get('http://api.icndb.com/jokes/random/' + this.amount + '?escape=javascript').then(response => {
+            this.jokes = response.data.value;
+            
+            for(let i=0;i<this.jokes.length; i++) {
+              this.jokes[i].saved = false;
+            }
+            
+            //später auch auf undefined prüfen wegen favoritenstern
+            this.$emit("load-data",this.jokes);
+          })
+      }
+  },
+  props : ["jokesAPIFromApp"]
+}
+
+</script>
+
+<style>
+
+</style>
