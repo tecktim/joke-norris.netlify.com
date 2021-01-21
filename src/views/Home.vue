@@ -34,7 +34,7 @@ export default {
   methods: {
       reloadJokes(amount) {
         this.amount = amount;
-        axios.get('http://api.icndb.com/jokes/random/' + this.amount + '?escape=javascript').then(response => {
+        axios.get('https://api.icndb.com/jokes/random/' + this.amount + '?escape=javascript').then(response => {
             this.jokes = response.data.value;
             
             for(let i=0;i<this.jokes.length; i++) {
