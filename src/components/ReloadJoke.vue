@@ -26,7 +26,8 @@ export default {
         alert("Even Chuck Norris is not able to count letters (please insert a number)");
         this.amount = 1;
       }else if(this.amount > 574){
-        alert("Even Chuck Norris can not print more than 574 Jokes on this page")       
+        alert("Even Chuck Norris can not print more than 574 Jokes on this page");
+        this.amount = 1; 
       }else{
       this.$emit("reload-Jokes", this.amount);
       }
