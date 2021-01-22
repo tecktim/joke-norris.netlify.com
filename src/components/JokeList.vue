@@ -32,7 +32,6 @@ export default {
     text-align: center;
     background-color: white;
     border: black;
-    margin: 1px;
   }
 
 </style>

@@ -40,7 +40,6 @@ export default {
             for(let i=0;i<this.jokes.length; i++) {
               this.jokes[i].saved = false;
             }
-            
             //später auch auf undefined prüfen wegen favoritenstern
             this.$emit("load-data",this.jokes);
           })
@@ -52,7 +51,5 @@ export default {
 </script>
 
 <style>
-.home {
-  height: 98%
-}
+
 </style>

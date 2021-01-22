@@ -23,8 +23,10 @@ export default {
   methods: {
     reloadJokes() {
       if(isNaN(this.amount)) {
-        alert("Input not a number, please enter a number");
+        alert("Even Chuck Norris is not able to count letters (please insert a number)");
         this.amount = 1;
+      }else if(this.amount > 574){
+        alert("Even Chuck Norris can not print more than 574 Jokes on this page")       
       }else{
       this.$emit("reload-Jokes", this.amount);
       }

@@ -70,15 +70,20 @@ export default {
 
   h1 {
     font-weight: bold;
-    font-size: 50px;
+    font-size: 400%;
     cursor: default;
     padding: 20px; 
+
   }
 
   h2 {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 200%;
     cursor: default;
+  }
+  
+  nav{
+    align-content: center;
   }
   
 </style>
