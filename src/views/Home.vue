@@ -52,5 +52,7 @@ export default {
 </script>
 
 <style>
-
+.home {
+  height: 98%
+}
 </style>

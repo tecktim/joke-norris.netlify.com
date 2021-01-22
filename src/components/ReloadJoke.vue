@@ -21,14 +21,17 @@ export default {
     } 
   },
   methods: {
-    reloadJoke() {
-
-    },
     reloadJokes() {
+      if(isNaN(this.amount)) {
+        alert("Input not a number, please enter a number");
+        this.amount = 1;
+      }else{
       this.$emit("reload-Jokes", this.amount);
+      }
+    },
     }
-  },
-}
+  }
+
 </script>
 
 <style scoped>

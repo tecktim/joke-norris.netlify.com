@@ -1,8 +1,8 @@
 <template>
 <div>
   <header class="header">
-  <img class="left" src="../../assets/ChuckNorrisHeaderLeft.jpg"/>
-  <img class="right" src="../../assets/ChuckNorrisHeaderRight.jpg"/>
+  <img class="left" src="../../assets/ChuckNorrisHeader.jpg"/>
+  <img class="right" src="../../assets/ChuckNorrisHeader.jpg"/>
     <h1>Chuck Norris Jokes</h1>
     <div id="nav">
       <h2>
@@ -37,6 +37,7 @@ export default {
 
   .right{
     float: right;
+    transform: scaleX(-1);
   }
 
   .header a {
@@ -44,10 +45,15 @@ export default {
     font-size: 30px;
     height: 10%;
     width: 100%;
+    
+  }
+
+  .header a:hover {
+    color: #434a67;
   }
 
   .header img {
-    width: 6%;
+    width: auto;
     height: 100%;
     cursor: progress;
     transition: all 2s ease-in-out;
@@ -59,7 +65,7 @@ export default {
     /*transform: scale(10);
     position: absolute;*/
     -webkit-filter: invert(1);
-    filter:invert(1);
+    filter: invert(1);
   }
 
   h1 {
@@ -74,4 +80,5 @@ export default {
     font-size: 20px;
     cursor: default;
   }
+  
 </style>
