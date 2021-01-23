@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div id="app">
-      <p class="text">☟ Favourites ☟</p>
+      <p class="text">▼ Favourites ▼</p>
       <JokeList :jokeList="jokesFavoritesFromApp"/>
     </div>
   </div>
@@ -21,10 +21,7 @@ export default {
           amount: Number
       }
   },
-  methods: {
-      
-  },
-  props : ["jokesFavoritesFromApp"]
+  props: ["jokesFavoritesFromApp"]
 }
 </script>
 
@@ -40,5 +37,4 @@ export default {
    padding-top: 15px;
    font-size: 60px;
  }
-
 </style>

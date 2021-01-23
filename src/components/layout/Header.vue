@@ -14,6 +14,9 @@
 </div>
 </template>
 
+/**Die Routerfunktionen kommen aus diesem Tutorial:
+	https://github.com/bradtraversy/vue_crash_todolist */
+
 /** Chuck Norris Picture: https://www.nordbayern.de/panorama/karate-weltmeister-und-kult-star-chuck-norris-wird-80-1.9906391  */
 
 <script>

@@ -46,6 +46,11 @@ export default {
       this.jokesAPI = data;
       
     },
+    /** Die LocalStorage Funktionen haben wir uns 
+     *  aus der Dokumentation und einem Stackoverflow Beitrag erschlossen.
+     *  https://developer.mozilla.org/de/docs/Web/API/Window/localStorage
+     *  https://stackoverflow.com/questions/2010892/storing-objects-in-html5-localstorage
+     */
     handleJoke(jokeListItem) {
         if(this.jokesFavorites === undefined) {
           this.jokesFavorites = [];
@@ -54,7 +59,9 @@ export default {
           this.jokesFavorites.push(jokeListItem);
           this.myStorage.setItem('FavoriteJokes', JSON.stringify(this.jokesFavorites));
         }else{
-          //Alle Jokes behalten bei denen die joke.id != der jokeListItem.id ist
+          /*erstellt ein neues Array mit allen Elementen bei denen joke.id != der jokeListItem.id zutrifft
+          * https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+          */
           this.jokesFavorites = this.jokesFavorites.filter(joke => joke.id != jokeListItem.id);
           this.myStorage.setItem('FavoriteJokes', JSON.stringify(this.jokesFavorites));
         }
@@ -74,7 +81,8 @@ export default {
 </script>
 
 <style>
- /* http://meyerweb.com/eric/tools/css/reset/ 
+ /*In App.vue wurde CSS global resettet durch: 
+   http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */

@@ -19,3 +19,6 @@ export default new Router({
     }
   ]
 })
+
+/**Die Routerfunktionen kommen aus diesem Tutorial:
+	https://github.com/bradtraversy/vue_crash_todolist */

@@ -9,8 +9,6 @@
    
 </template>
 
-/* tooltip von https://stackoverflow.com/questions/19480010/adding-a-tooltip-to-an-input-box */
-
 <script>
 // import uuid from 'uuid';
 export default {
@@ -31,14 +29,14 @@ export default {
         alert("Even Chuck Norris can not print more than 574 Jokes on this page");
         this.amount = 1; 
       }else{
-      this.$emit("reload-Jokes", this.amount);
+        this.$emit("reload-Jokes", this.amount);
       }
     },
     }
   }
-
 </script>
 
+/* tooltip von https://stackoverflow.com/questions/19480010/adding-a-tooltip-to-an-input-box */
 <style scoped>
 .text{
   width: 99.56%;
@@ -83,9 +81,6 @@ export default {
     position: absolute;  
     margin-top: -10px;
     margin-left: -224px;
-    border-width: 5px;
-    border-style: solid;
-    border-width: 10px;
     border-color: transparent white transparent transparent;
 }
 .tooltip:hover .tooltiptext {

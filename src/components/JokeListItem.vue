@@ -2,6 +2,7 @@
   <div class="jokeWrapper">
       <div class="jokeText">{{jokeListItem.joke}}</div>
         <div class="tooltip">
+          <!-- Wenn das Item nicht saved oder undefined ist, ist die CSS-Klasse notFav aktiv, ist es saved ist die CSS-Klasse Fav aktiv-->
          <img :class="!jokeListItem.saved || jokeListItem.saved === undefined ? 'notFav' : 'Fav'" src="../assets/getJokesImage.jpg" v-on:click="handleButton"/>
          <div class="tooltiptext">Click to toggle favorite</div>
         </div>
@@ -21,9 +22,10 @@ export default {
       }
   }
 }
-
 </script>
 
+/* tooltip von https://stackoverflow.com/questions/19480010/adding-a-tooltip-to-an-input-box */
+/* cursor bei .Fav kommt von: https://www.cursor.cc/?action=icon&file_id=38 */
 <style scoped>
   .jokeText
   {

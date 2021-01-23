@@ -4,8 +4,12 @@
       <JokeListItem :jokeListItem="joke"/>
     </div>
     <footer>
+      <!-- http://www.icndb.com/api/ -->
+      <!-- https://developer.mozilla.org/de/docs/Web/HTML/Element/marquee
+      "Es wird davon abgeraten, dieses Tag zu benutzen, da es das schlimmste ist, was Sie ihren Besuchern antun können."
+      Ja das meinen wir ernst :)-->
       <marquee direction="right" scrollamount="7">
-        <p class="footer">*** Thanks for the <a href="http://www.icndb.com/api/">API</a> ***</p>
+        <p class="footer">*** Thanks for the <a href="http://www.icndb.com/api/">API</a>: The Internet Chuck Norris Database ***</p>
       </marquee>
     </footer>
   </div>
@@ -33,7 +37,6 @@ export default {
     background-color: beige;
     border: black;
     font-weight: bolder;
-    text-emphasis-color: pink;
-  }
+    }
 
 </style>
