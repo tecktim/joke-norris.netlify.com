@@ -32,6 +32,9 @@ Auflistung der verwendeten fremden Codebstandteile:
 
 7. Footer Bewegung von:
 	 https://developer.mozilla.org/de/docs/Web/HTML/Element/marquee
+
+8. Key-Changing Strategie von der Website https://michaelnthiessen.com/force-re-render/
+         verwendet um die Visibility von dem getJokesImage upzudaten mithilfe des renderUpdate Keys
 ----------------------------------------------------------------------------------------------------------------------------------------
 Ausführliche Beschreibung und Begründung der Architektur unseres Codes:
 Kurze Beschreibung für jede Komponente:

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header />
-    <router-view v-if="renderComponent"
+    <router-view 
     v-on:load-data="loadData"
     :jokesAPIFromApp="jokesAPI" 
     :jokesFavoritesFromApp="jokesFavorites"/>
@@ -20,8 +20,7 @@ export default {
     return {
       jokesAPI : [],
       jokesFavorites : [],
-      myStorage: localStorage,
-      renderComponent : true
+      myStorage: localStorage
     }
   },
   mounted() 
@@ -33,14 +32,6 @@ export default {
     }
   },
   methods : {
-    forceRerender()
-    {
-      this.renderComponent = false;
-
-      this.$nextTick(() => {
-        this.renderComponent = true;
-      });
-    },
     loadData(data)
     {
       this.jokesAPI = data;
@@ -73,8 +64,6 @@ export default {
             }
           }
         }
-        this.forceRerender();
-
       }
   }
 }

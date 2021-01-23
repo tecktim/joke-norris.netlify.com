@@ -1,7 +1,9 @@
 <template>
   <div class="jokeWrapper">
       <div class="jokeText">{{jokeListItem.joke}}</div>
-        <div class="tooltip">
+      <!-- Key-Changing Strategie von der Website https://michaelnthiessen.com/force-re-render/
+          verwendet um die Visibility von dem getJokesImage upzudaten mithilfe des renderUpdate Keys-->
+        <div :key="renderUpdate" class="tooltip">
           <!-- Wenn das Item nicht saved oder undefined ist, ist die CSS-Klasse notFav aktiv, ist es saved ist die CSS-Klasse Fav aktiv-->
          <img :class="!jokeListItem.saved || jokeListItem.saved === undefined ? 'notFav' : 'Fav'" src="../assets/getJokesImage.jpg" v-on:click="handleButton"/>
          <div class="tooltiptext">Click to toggle favorite</div>
@@ -15,8 +17,14 @@
 export default {
   name: "JokeListItem",
   props: ["jokeListItem"],
+  data() {
+    return {
+        renderUpdate: 0
+    }
+  },
   methods: {
       handleButton() {
+          this.renderUpdate +=1;
           this.jokeListItem.saved = !this.jokeListItem.saved;
           this.$root.$emit("handle-joke", this.jokeListItem);
       }
