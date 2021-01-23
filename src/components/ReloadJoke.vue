@@ -40,7 +40,6 @@ export default {
 </script>
 
 <style scoped>
-
 .text{
   width: 99.56%;
   height: 50px;

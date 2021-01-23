@@ -4,8 +4,8 @@
       <JokeListItem :jokeListItem="joke"/>
     </div>
     <footer>
-      <marquee direction="right">
-        <p class="footer">Thanks for the <a href="http://www.icndb.com/api/">API</a></p>
+      <marquee direction="right" scrollamount="7">
+        <p class="footer">*** Thanks for the <a href="http://www.icndb.com/api/">API</a> ***</p>
       </marquee>
     </footer>
   </div>
@@ -30,8 +30,10 @@ export default {
     width: 100%;
     bottom: 0;
     text-align: center;
-    background-color: white;
+    background-color: beige;
     border: black;
+    font-weight: bolder;
+    text-emphasis-color: pink;
   }
 
 </style>

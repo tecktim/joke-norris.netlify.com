@@ -23,7 +23,6 @@ export default {
       myStorage: localStorage,
       renderComponent : true
     }
-
   },
   mounted() 
   {
