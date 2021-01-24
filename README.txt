@@ -35,6 +35,8 @@ Auflistung der verwendeten fremden Codebstandteile:
 
 8. Key-Changing Strategie von der Website https://michaelnthiessen.com/force-re-render/
          verwendet um die Visibility von dem getJokesImage upzudaten mithilfe des renderUpdate Keys
+
+9. cursor bei .Fav kommt von: https://www.cursor.cc/?action=icon&file_id=38 (JokeListItem.vue)
 ----------------------------------------------------------------------------------------------------------------------------------------
 Ausführliche Beschreibung und Begründung der Architektur unseres Codes:
 Kurze Beschreibung für jede Komponente:
