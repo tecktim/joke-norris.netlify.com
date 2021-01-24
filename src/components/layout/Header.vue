@@ -31,6 +31,7 @@ export default {
     color: white;
     text-align: center;
     height: 150px;
+    width: 100%;
   }
    
   .left {
@@ -76,7 +77,6 @@ export default {
     font-size: 400%;
     cursor: default;
     padding: 20px; 
-
   }
 
   h2 {

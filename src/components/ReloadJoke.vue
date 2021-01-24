@@ -35,19 +35,13 @@ export default {
     }
   }
 </script>
-
 /* tooltip von https://stackoverflow.com/questions/19480010/adding-a-tooltip-to-an-input-box */
 <style scoped>
+input {
+  padding: 0px 0px;
+  border-width: 0px;
+}
 .text{
-  width: 99.56%;
-  height: 50px;
-  text-align: center;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 30px;
-  background-color: grey;
-  } 
-.btn{
   width: 100%;
   height: 50px;
   text-align: center;
@@ -55,7 +49,20 @@ export default {
   cursor: pointer;
   font-size: 30px;
   background-color: grey;
-  }
+  } 
+ 
+.btn{
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 30px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: grey;
+}
+
 .tooltip {
     display: inline-block;    
     width: 100%;
