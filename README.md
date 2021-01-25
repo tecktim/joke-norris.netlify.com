@@ -1,4 +1,4 @@
-# chucknorris
+# chucknorris und Tim kann nix! Max schon!
 
 ## Project setup
 ```
