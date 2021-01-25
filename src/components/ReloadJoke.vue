@@ -37,6 +37,8 @@ export default {
 /* tooltip von https://stackoverflow.com/questions/19480010/adding-a-tooltip-to-an-input-box */
 <style scoped>
 input {
+  width: 100%;
+  margin: auto;
   padding: 0px 0px;
   border-width: 0px;
 }
@@ -47,6 +49,10 @@ input {
   font-weight: bold;
   cursor: pointer;
   font-size: 30px;
+  border-style: solid;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-color: black;
   background-color: grey;
   } 
  
@@ -58,7 +64,9 @@ input {
   cursor: pointer;
   font-size: 30px;
   border-style: solid;
-  border-width: 1px;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-color: black;
   background-color: grey;
 }
 
