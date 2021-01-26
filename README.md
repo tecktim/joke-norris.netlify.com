@@ -1,4 +1,4 @@
-# chucknorris und Tim kann nix! Max schon!
+# chucknorris jokes website in vue
 
 ## Project setup
 ```
